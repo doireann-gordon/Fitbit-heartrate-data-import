@@ -1,0 +1,1 @@
+1. Save the function as a standalone function with documentation
