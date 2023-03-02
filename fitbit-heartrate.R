@@ -32,7 +32,7 @@ for(i in 1:length(data.files)){
 }
     df <- dplyr::bind_rows(my_data) # huge.
     save(df, file = paste0(myresultsfolder, "complete heart rate data.RData", sep = ""))
-    write.csv(df, file = paste0(myresultsfolder, "complete heart rate data.csv", sep = ""))
+    write.csv(df, file = paste0(myresultsfolder, "complete heart rate data.csv", sep = ""), row.names = F)
     return(df)
   }
 df <- fitbit_json_to_tibble(root.data.path, data.files, myresultsfolder)
