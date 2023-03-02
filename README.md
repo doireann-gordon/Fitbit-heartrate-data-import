@@ -1,2 +1,8 @@
 # Fitbit-heartrate-data-import
-Imports Fitbit heartrate data from individual daily files to one tibble
+Imports Fitbit heart rate data from individual daily files to one tibble
+
+Fitbit heart rate files are separate for every single day, and in a .json format. This file contains a function to convert all of this data into one dataframe/tibble.
+
+The Fitbit data is obtained by requesting an export from the website.
+
+The only input required is the username, and desired results folder. The root.data directory may need to be adjusted depending on where you have saved your Fitbit data folder. I've placed it in the same location as the R file.
